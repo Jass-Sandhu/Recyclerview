@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Demo Project</string>
+
+
+    <!--Validations-->
+    <string name="empty_username">Please enter username</string>
+    <string name="empty_password">Please enter password</string>
+
+
+    <!--Login Activity-->
+    <string name="username">Username</string>
+
+
+
+</resources>

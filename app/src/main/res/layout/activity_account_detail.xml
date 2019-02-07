@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="demo.demoprojects.activities.AccountDetailActivity">
+
+    <demo.demoprojects.activities.customViews.CustomTextView
+        android:id="@+id/tv_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Your username:" />
+
+
+    <demo.demoprojects.activities.customViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_username"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_username_label"
+        android:text="username"/>
+
+    <demo.demoprojects.activities.customViews.CustomTextView
+        android:id="@+id/tv_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_username_label"
+        android:text="Your Password:" />
+    <demo.demoprojects.activities.customViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_password"
+        android:layout_below="@+id/tv_username"
+        android:layout_toRightOf="@+id/tv_password_label"
+        android:layout_marginLeft="10dp"
+        android:text="password"/>
+
+    <Button
+        android:layout_below="@+id/tv_password_label"
+        android:id="@+id/bt_ok"
+        android:onClick="ReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_ok"
+        android:id="@+id/rv_cars">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
